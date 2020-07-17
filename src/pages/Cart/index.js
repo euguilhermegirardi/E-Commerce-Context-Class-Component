@@ -23,12 +23,14 @@ class Cart extends Component {
           {this.context.cart.map(cartItem => (
             <li className="list__item" key={cartItem.id}>
               <img className="list__img" src={cartItem.image} alt="img" />
-              <strong className="list__strong">{cartItem.title}</strong> €{cartItem.price}
-              <span className="list__qtd">Qty: {cartItem.quantity}</span>
+              <div className="list__info-container">
+                <strong className="list__strong">{cartItem.title}</strong> €{cartItem.price}
+                <span className="list__qtd">Qty: {cartItem.quantity}</span>
 
-              <button className="list__btn" onClick={this.context.removeProduct.bind(this, cartItem.id)}>
-                <span className="list__btn-span">Remove from Cart</span>
-              </button>
+                <button className="list__btn" onClick={this.context.removeProduct.bind(this, cartItem.id)}>
+                  <span className="list__btn-span">Remove from Cart</span>
+                </button>
+              </div>
             </li>
           ))}
         </ul>
