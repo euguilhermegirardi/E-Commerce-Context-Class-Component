@@ -52,3 +52,6 @@ It was developed with [**_ReactJS_**](https://reactjs.org/) using [**Context**](
 ## License
 
 ![MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+
+## Deploy
+[![Netlify Status](https://api.netlify.com/api/v1/badges/91cba604-ef2f-4198-a419-65955167b6cb/deploy-status)](https://app.netlify.com/sites/e-commerce-class-component-context/deploys)
